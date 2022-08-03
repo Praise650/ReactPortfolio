@@ -1,0 +1,106 @@
+.resume {
+   height: 100%;
+   padding-top: 80px;
+   padding-bottom: 30px;
+   overflow-y: scroll;
+   animation: slide-right 0.2s linear;
+}
+
+.resume::-webkit-scrollbar {
+   width: 0;
+}
+
+.resume-container {
+   background-color: hsl(var(--bg-element));
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+.resume-container>div {
+   margin-bottom: 25px;
+}
+
+.resume .info>div {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
+.resume p {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: hsl(var(--text-clr) /.6);
+   font-size: var(--fs-sm);
+}
+
+.resume h3 {
+   font-weight: 700;
+   font-size: var(--fs-lg);
+   margin-bottom: 15px;
+   position: relative;
+}
+
+.resume h3::after {
+   content: '';
+   position: absolute;
+   height: 1px;
+   width: 100%;
+   background-color: hsl(var(--text-clr) /.3);
+   right: 0px;
+   top: 25px;
+}
+
+.resume .mail {
+   display: block;
+   margin-top: 10px;
+   text-decoration: none;
+   color: hsl(var(--text-clr));
+   font-size: var(--fs-vs);
+}
+
+.resume .mail span {
+   margin-left: 5px;
+   color: hsl(var(--text-clr) /.6);
+}
+
+.resume .mail span:hover {
+   color: hsl(var(--text-clr));
+}
+
+.resume .link {
+   display: flex;
+   gap: 10px;
+   margin-top: 15px;
+   height: fit-content;
+}
+
+.resume .link a {
+   text-decoration: none;
+   color: hsl(var(--text-clr));
+}
+
+.resume .link span {
+   margin-left: 5px;
+   color: hsl(var(--text-clr) /.6);
+}
+
+.resume .link span:hover {
+   color: hsl(var(--text-clr));
+}
+
+@media (max-width: 1080px) {
+   .resume .link {
+      gap: 20px;
+      font-size: var(--fs-lg);
+   }
+
+   .resume .link span {
+      display: none;
+   }
+}
+
+@media (max-width: 950px) {
+   .resume {
+      padding-top: 0;
+      animation: slide-up 0.2s linear;
+   }
+}

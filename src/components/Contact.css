@@ -1,0 +1,62 @@
+.contact {
+   height: 100%;
+   padding-top: 80px;
+   padding-bottom: 30px;
+   overflow-y: scroll;
+   animation: slide-right 0.2s linear;
+}
+
+.contact::-webkit-scrollbar {
+   width: 0;
+}
+
+.contact h1 {
+   margin-bottom: 30px;
+}
+
+.contact .form-group {
+   margin-bottom: 30px;
+   max-width: 550px;
+}
+
+.contact .form-control {
+   width: 100%;
+   line-height: 20px;
+   padding: 10px;
+   background-color: hsl(var(--bg-element));
+   border: none;
+   color: hsl(var(--text-clr));
+}
+
+.contact .form-control:-webkit-autofill,
+.contact .form-control:-webkit-autofill:hover,
+.contact .form-control:-webkit-autofill:focus,
+.contact .form-control:-webkit-autofill:active {
+   box-shadow: 0 0 0 30px hsl(var(--bg-element)) inset !important;
+   -webkit-box-shadow: 0 0 0 30px hsl(var(--bg-element)) inset !important;
+}
+
+.contact .form-control:-webkit-autofill {
+   -webkit-text-fill-color: hsl(var(--text-clr)) !important;
+}
+
+.contact .form-control:focus {
+   outline: none;
+   border: 1px solid hsl(var(--text-clr));
+}
+
+.contact form button {
+   width: 100%;
+}
+
+.contact input[type='submit'] {
+   background-color: green;
+}
+
+
+@media (max-width: 950px) {
+   .contact {
+      padding-top: 0;
+      animation: slide-up 0.2s linear;
+   }
+}

@@ -1,0 +1,89 @@
+nav ul {
+   list-style: none;
+   padding: 10px;
+}
+
+nav ul li {
+   margin-bottom: 10px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: hsl(var(--text-clr) /.6);
+   font-size: var(--fs-sm);
+   padding-right: 250px;
+   font-weight: 600;
+   position: relative;
+}
+
+nav ul li a:after {
+   content: '';
+   position: absolute;
+   width: 60px;
+   height: 2px;
+   left: clamp(30px, 15vw, 450px);
+   background-color: hsl(var(--bg-clr));
+   outline: 1px solid hsl(var(--text-clr) /.6);
+   top: 50%;
+   transform: translateY(-50%);
+   transition: all linear 0.2s;
+}
+
+nav ul li a:hover {
+   color: hsl(var(--text-clr));
+}
+
+nav ul li a:hover:after {
+   outline: 1px solid hsl(var(--text-clr));
+   width: 70px;
+}
+
+nav ul .active a {
+   color: hsl(var(--text-clr));
+}
+
+nav ul .active a:after {
+   width: 100px !important;
+   outline: 1px solid hsl(var(--text-clr));
+}
+
+
+@media (max-width: 950px) {
+   nav {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+   }
+
+   nav ul {
+      padding-bottom: 60px;
+      animation: slide-down 0.2s ease-in;
+   }
+
+
+   nav ul li {
+      margin-bottom: 60px;
+   }
+
+   nav ul li a {
+      padding: 0;
+   }
+
+   nav ul li a:after {
+      display: none;
+   }
+
+   nav ul .active a:after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 75px !important;
+      outline: 1px solid hsl(var(--text-clr));
+   }
+
+}

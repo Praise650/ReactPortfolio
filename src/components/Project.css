@@ -1,0 +1,102 @@
+.works {
+   height: 100%;
+   padding-top: 80px;
+   padding-bottom: 30px;
+   overflow-y: scroll;
+   animation: slide-right 0.2s linear;
+}
+
+.works::-webkit-scrollbar {
+   width: 0;
+}
+
+.project {
+   display: flex;
+   flex-direction: column;
+   background-color: hsl(var(--bg-element));
+   padding: 15px;
+   height: 170px;
+   margin-bottom: 20px;
+}
+
+.project:last-child {
+   margin-bottom: 0;
+}
+
+.project p {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project:hover {
+   border: 1px solid hsl(var(--text-clr)/0.2);
+}
+
+.project .top h3 {
+   font-size: var(--fs-sm);
+   font-weight: 700;
+   margin-bottom: 15px;
+}
+
+.project .top p {
+   color: hsl(var(--text-clr)/0.6);
+   font-size: var(--fs-sm);
+}
+
+.project .buttom {
+   margin-top: auto;
+   color: hsl(var(--text-clr));
+   font-size: var(--fs-vs);
+   display: flex;
+   gap: 5px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.project .link {
+   display: flex;
+   gap: 13px;
+}
+
+.project .link a {
+   text-decoration: none;
+   color: hsl(var(--text-clr)/0.6);
+}
+
+.project .link a span {
+   color: hsl(var(--text-clr));
+   margin-left: 4px;
+}
+
+.project .link a:hover {
+   color: hsl(var(--text-clr));
+}
+
+@media (max-width: 950px) {
+   .works {
+      padding-top: 0;
+      animation: slide-up 0.2s linear;
+   }
+
+   .project:hover {
+      border: none;
+   }
+
+   .project .link a {
+      margin-left: 4px;
+   }
+
+   .project .link a span {
+      margin: 5px;
+      display: block;
+   }
+}
+
+@media (max-width: 375px) {
+   .buttom .tools {
+      font-size: 10px;
+   }
+
+   .project .link {
+      gap: 7px;
+   }
+}
