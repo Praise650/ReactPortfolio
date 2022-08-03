@@ -33,6 +33,15 @@ const projects = [
       tools: 'HTML/CSS, Javascript, React JS',
    },
    {
+      name: 'This Portfolio',
+      details: 'My portfolio website that showcases my skills',
+      link: {
+         live: 'https://fabiyijay.netlify.app',
+         code: 'https://github.com/johnsiner/my-portfolio',
+      },
+      tools: 'HTML/CSS, Javascript, React JS',
+   },
+   {
       name: 'Sneakers Product Page',
       details: 'Sample product page for an Ecommmerce website',
       link: {
