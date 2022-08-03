@@ -4,13 +4,16 @@ import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Contact() {
    const navigate = useNavigate();
    const form = useRef();
+   const [submitButtonText, setSubmitButtonText] = useState('Send Message');
 
    const sendEmail = (event) => {
       event.preventDefault();
+      setSubmitButtonText('Sending Message...');
       emailjs
          .sendForm(
             process.env.REACT_APP_SERVICE_ID,
@@ -22,6 +25,7 @@ export default function Contact() {
             (result) => {
                toast('Message Sent, will get to you back shortly');
                event.target.reset();
+               setSubmitButtonText('Send Message');
             },
             (error) => {
                toast(error.text);
@@ -65,7 +69,7 @@ export default function Contact() {
             <div className="form-group">
                <input
                   type="submit"
-                  value="Send message"
+                  value={submitButtonText}
                   className="form-control"
                />
             </div>
