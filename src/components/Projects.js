@@ -4,6 +4,15 @@ import { useNavigate } from 'react-router-dom';
 
 const projects = [
    {
+      name: 'Entertainment Web App',
+      details: 'A shows webpage where user can bookmark shows of their choice',
+      link: {
+         live: 'https://jay-entertainment-web-app.herokuapp.com/',
+         code: 'https://github.com/johnsiner/entertainment-web-app',
+      },
+      tools: 'HTML/CSS, React JS, Mongo, Node JS, Express, Rest API',
+   },
+   {
       name: 'Space Tourism Webpage',
       details:
          'Explore space travel while learning about the crew and technology involved',
@@ -58,7 +67,7 @@ const projects = [
          live: 'https://mern-amazona-jay.herokuapp.com/',
          code: 'https://github.com/johnsiner/amazona',
       },
-      tools: 'HTML/CSS, Javascript, React JS, Mongo, Node JS',
+      tools: 'HTML/CSS, React JS, Mongo, Node JS, Express, Rest API',
    },
 ];
 

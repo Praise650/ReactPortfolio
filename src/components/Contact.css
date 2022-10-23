@@ -37,7 +37,7 @@
 }
 
 .contact .form-control:-webkit-autofill {
-   -webkit-text-fill-color: hsl(var(--text-clr)) !important;
+   -webkit-text-fill-color: var(--text-clr) !important;
 }
 
 .contact .form-control:focus {

@@ -19,7 +19,7 @@ export default function Header() {
             </div>
             <div>
                <h2 className="fs-md fw-b">Fabiyi Johnson</h2>
-               <h3 className="fs-sm">Frontend, web developer</h3>
+               <h3 className="fs-sm">Fullstack, web developer</h3>
             </div>
          </div>
          <p>
