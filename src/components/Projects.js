@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const projects = [
    {
       name: 'Entertainment Web App',
-      details: 'A shows webpage where user can bookmark shows of their choice',
+      details: 'A shows webpage where users can bookmark shows of their choice',
       link: {
          live: 'https://jay-entertainment-web-app.herokuapp.com/',
          code: 'https://github.com/johnsiner/entertainment-web-app',
