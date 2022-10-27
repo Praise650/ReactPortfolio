@@ -13,7 +13,7 @@ export default function Resume() {
                <div>
                   <div>
                      <h1 className="fs-vl fw-b">Fabiyi Johnson</h1>
-                     <h2 className="fs-lg fw-b">Frontend Developer</h2>
+                     <h2 className="fs-lg fw-b">Fullstack Developer</h2>
                      <a className="mail" href="mailto:fabiyijay@gmail.com">
                         <i className="fa-solid fa-paper-plane"></i>
                         <span>send an email</span>
@@ -35,17 +35,20 @@ export default function Resume() {
                   </div>
                </div>
                <p>
-                  I am an enthusiastic frontend developer with passion for the
-                  latest solutions and interactive design.
+                  I am an enthusiastic fullstack web developer with passion for
+                  the latest solutions and interactive design.
                </p>
             </div>
             <div>
                <h3>Core Technologies</h3>
-               <p>HTML/CSS, SASS, Javascript [ES6], React Js, Redux.</p>
+               <p>
+                  HTML/CSS, SASS, Javascript [ES6], React Js, Redux, Node.js,
+                  Express.js, Rest APIs.
+               </p>
             </div>
             <div>
                <h3>Familiar With</h3>
-               <p>Typescript, Node Js, CSS-in-JS,.</p>
+               <p>Typescript, CSS-in-JS.</p>
             </div>
             <div>
                <h3>On The Job</h3>
@@ -71,6 +74,20 @@ export default function Resume() {
                   </li>
                   <li>
                      <p>Indexed DB bugs, and performing web scraping.</p>
+                  </li>
+               </ul>
+               <h2 className="fs-md">
+                  Paramount Students - <i>Frontend Web Developer Intern</i>
+               </h2>
+               <ul>
+                  <li>
+                     <p>
+                        Collaborated with a team to create the organization's
+                        website.
+                     </p>
+                  </li>
+                  <li>
+                     <p>Maintained and updated website's contents.</p>
                   </li>
                </ul>
             </div>
