@@ -7,7 +7,7 @@ const projects = [
       name: 'Entertainment Web App',
       details: 'A shows webpage where users can bookmark shows of their choice',
       link: {
-         live: 'https://jay-entertainment-web-app.herokuapp.com/',
+         live: 'https://entertainment-web-app-ngkl.onrender.com',
          code: 'https://github.com/johnsiner/entertainment-web-app',
       },
       tools: 'HTML/CSS, React JS, Mongo, Node JS, Express, Rest API',
