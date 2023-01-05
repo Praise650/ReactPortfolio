@@ -8,7 +8,7 @@ const projects = [
       details:
          'An Ecommerce website with varying range of products and cart functionality',
       link: {
-         live: 'https://audiophile-6g5l.onrender.com/category/headphones',
+         live: 'https://audiophile-6g5l.onrender.com/category',
          code: 'https://github.com/johnsiner/audiphile-ecommerce-site',
       },
       tools: 'HTML/CSS, React JS, Mongo, Node JS, Express, Rest API',
