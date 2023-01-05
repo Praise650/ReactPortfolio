@@ -4,6 +4,16 @@ import { useNavigate } from 'react-router-dom';
 
 const projects = [
    {
+      name: 'Audiophile Ecommerce Website',
+      details:
+         'An Ecommerce website with varying range of products and cart functionality',
+      link: {
+         live: 'https://audiophile-6g5l.onrender.com/category/headphones',
+         code: 'https://github.com/johnsiner/audiphile-ecommerce-site',
+      },
+      tools: 'HTML/CSS, React JS, Mongo, Node JS, Express, Rest API',
+   },
+   {
       name: 'Entertainment Web App',
       details: 'A shows webpage where users can bookmark shows of their choice',
       link: {
@@ -59,16 +69,16 @@ const projects = [
       },
       tools: 'HTML/CSS, Javascript, React JS',
    },
-   {
-      name: 'Amazona (Trenches Amazon)',
-      details:
-         'An Ecommerce site with login, cart fuctionality and integration with paypal',
-      link: {
-         live: 'https://mern-amazona-jay.herokuapp.com/',
-         code: 'https://github.com/johnsiner/amazona',
-      },
-      tools: 'HTML/CSS, React JS, Mongo, Node JS, Express, Rest API',
-   },
+   // {
+   //    name: 'Amazona (Trenches Amazon)',
+   //    details:
+   //       'An Ecommerce site with login, cart fuctionality and integration with paypal',
+   //    link: {
+   //       live: 'https://mern-amazona-jay.herokuapp.com/',
+   //       code: 'https://github.com/johnsiner/amazona',
+   //    },
+   //    tools: 'HTML/CSS, React JS, Mongo, Node JS, Express, Rest API',
+   // },
 ];
 
 export default function Projects() {
