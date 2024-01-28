@@ -18,8 +18,8 @@ export default function Header() {
                <img src={avatar} alt="avatar" />
             </div>
             <div>
-               <h2 className="fs-md fw-b">Fabiyi Johnson</h2>
-               <h3 className="fs-sm">Fullstack, web developer</h3>
+               <h2 className="fs-md fw-b">Praise Afuwape</h2>
+               <h3 className="fs-sm">Junior Fullstack Software Engineer,</h3>
             </div>
          </div>
          <p>
